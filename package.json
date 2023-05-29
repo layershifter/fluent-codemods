@@ -1,0 +1,29 @@
+{
+  "name": "fluentui-codemods",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.5.1",
+  "type": "module",
+  "bin": "dist/cli.js",
+  "scripts": {
+    "build": "tsup src/cli.ts --format esm"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.22.1",
+    "@babel/helper-plugin-utils": "^7.21.5",
+    "@babel/types": "^7.22.3",
+    "tiny-glob": "^0.2.9"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.1",
+    "@types/babel__helper-plugin-utils": "^7.10.0",
+    "babel-plugin-tester": "^11.0.4",
+    "prettier": "^2.8.8",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.1"
+  }
+}
